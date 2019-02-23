@@ -1,5 +1,7 @@
 build
 
+lib
+
 # Standard Node.js .gitignore (https://github.com/github/gitignore/blob/master/Node.gitignore)
 
 # Logs

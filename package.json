@@ -1,0 +1,29 @@
+{
+  "name": "windows-register-restart",
+  "version": "0.1.0",
+  "description": "A Node.js extension for registering an application for restart on Windows.",
+  "main": "lib/index.js",
+  "scripts": {
+    "configure": "node-gyp configure",
+    "rebuild": "node-gyp rebuild | tsc",
+    "build": "node-gyp build | tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kdelorey/node-windows-register-restart"
+  },
+  "author": "Kevin DeLorey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kdelorey/node-windows-register-restart/issues"
+  },
+  "homepage": "https://github.com/kdelorey/node-windows-register-restart#readme",
+  "os": [
+    "win32"
+  ],
+  "devDependencies": {
+    "@types/node": "^11.9.4",
+    "node-gyp": "^3.8.0",
+    "typescript": "^3.3.3333"
+  }
+}
