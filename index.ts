@@ -32,11 +32,7 @@ export enum NoRestart {
  * 
  * @returns Whether the registration was succesfull.
  */
-export function registerApplicationRestart(
-    commandLine: string | undefined = undefined, 
-    noRestart: NoRestart | undefined = undefined
-): boolean {
-
+export function registerApplicationRestart(commandLine?: string, noRestart?: NoRestart): boolean {
     if (native) {
         return <boolean> native.registerRestart(commandLine, noRestart);
     }
