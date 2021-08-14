@@ -35,6 +35,6 @@
     "binding.gyp",
     "tsconfig.ts",
     "lib/*",
-    "build/Release/winregrestart.node"
+    "src/*"
   ]
 }
