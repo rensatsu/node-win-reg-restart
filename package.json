@@ -1,14 +1,14 @@
 {
   "name": "@rensatsu/win-reg-restart",
   "version": "0.2.0",
-  "description": "A Node.js extension for registering an application for restart on Windows.",
+  "description": "A Node.js extension for registering applications for restart on Windows",
   "main": "lib/index.js",
   "scripts": {
     "configure": "node-gyp configure",
     "rebuild": "node-gyp rebuild | tsc",
     "build": "node-gyp build | tsc",
-    "format": "prettier --write \"**/*.{js,json,ts,css,html}\"",
-    "format:check": "prettier --check \"**/*.{js,json,ts,css,html}\"",
+    "format": "prettier --write \"**/*.{js,json,ts,css,html,ya?ml}\"",
+    "format:check": "prettier --check \"**/*.{js,json,ts,css,html,ya?ml}\"",
     "prepack": "npm run build"
   },
   "repository": {
