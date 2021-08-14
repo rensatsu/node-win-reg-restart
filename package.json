@@ -1,6 +1,6 @@
 {
   "name": "@rensatsu/win-reg-restart",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "A Node.js extension for registering an application for restart on Windows.",
   "main": "lib/index.js",
   "scripts": {
