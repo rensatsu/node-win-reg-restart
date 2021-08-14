@@ -1,29 +1,40 @@
 {
-  "name": "windows-register-restart",
+  "name": "@rensatsu/win-reg-restart",
   "version": "0.1.2",
   "description": "A Node.js extension for registering an application for restart on Windows.",
   "main": "lib/index.js",
   "scripts": {
     "configure": "node-gyp configure",
     "rebuild": "node-gyp rebuild | tsc",
-    "build": "node-gyp build | tsc"
+    "build": "node-gyp build | tsc",
+    "format": "prettier --write \"**/*.{js,json,ts,css,html}\"",
+    "format:check": "prettier --check \"**/*.{js,json,ts,css,html}\"",
+    "prepack": "npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kdelorey/node-windows-register-restart"
+    "url": "git+https://github.com/rensatsu/node-win-reg-restart"
   },
-  "author": "Kevin DeLorey",
+  "author": "Rensatsu",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kdelorey/node-windows-register-restart/issues"
+    "url": "https://github.com/rensatsu/node-win-reg-restart/issues"
   },
-  "homepage": "https://github.com/kdelorey/node-windows-register-restart#readme",
+  "homepage": "https://github.com/rensatsu/node-win-reg-restart#readme",
   "os": [
     "win32"
   ],
   "devDependencies": {
-    "@types/node": "^11.9.4",
-    "node-gyp": "^3.8.0",
-    "typescript": "^3.3.3333"
-  }
+    "@types/node": "^16.6.1",
+    "node-gyp": "^8.1.0",
+    "prettier": "^2.3.2",
+    "typescript": "^4.3.5"
+  },
+  "files": [
+    "index.ts",
+    "binding.gyp",
+    "tsconfig.ts",
+    "lib/*",
+    "build/Release/winregrestart.node"
+  ]
 }

@@ -1,11 +1,11 @@
 {
   "targets": [
     {
-      "target_name": "windowsrestart",
+      "target_name": "winregrestart",
       "conditions": [
         ['OS=="win"', {      
           "sources": [
-            "src/winapprestart.cc"
+            "src/winregrestart.cc"
           ]
         }]
       ]
